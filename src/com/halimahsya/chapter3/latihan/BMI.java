@@ -1,4 +1,4 @@
-package com.halimahsya.chapter1.latihan;
+package com.halimahsya.chapter3.latihan;
 
 import java.util.Scanner;
 
