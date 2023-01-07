@@ -2,19 +2,16 @@ package com.halimahsya.chapter5.tugas;
 
 public class financial {
     public static void main(String[] args){
-        int totalcost =0,tuition = 10000;
-        int tuitiontenthyear;
-        for (int year = 1; year <= 14; year++) {
-            tuition += (tuition * 0.05);
-            if (year > 10)
-                totalcost += tuition;
-            if (year == 10)
-                tuitiontenthyear = tuition;
-        }
-        System.out.println("tuition in ten years : $ " + tuitiontenthyear);
-
-
-        System.out.println(" total cost for four years worth of tuition " +
-                " after the tenth year : $" + totalcost);
+        double total=0,tuition = 10000;
+        int tahun = 0;
+                while(tahun<14){
+                    tuition += 0.05 * tuition;
+                    if(tahun == 10) System.out.printf(" tuisi dalam 10 tahun : $%1.2f", tuition);
+                    if(tahun >= 10){
+                        total += tuition;
+                    }
+                    if(tahun == 13)System.out.printf(" biaya dalam 10 tahun 4 tahun tuisi akan $%1.2f",total);
+                    tahun++;
+                }
     }
 }
