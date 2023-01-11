@@ -1,4 +1,4 @@
-package com.halimahsya.chapter1.ujian;
+package com.halimahsya.chapter1_introduction.ujian;
 
 public class Soal4 {
     public static void main(String[] args) {
