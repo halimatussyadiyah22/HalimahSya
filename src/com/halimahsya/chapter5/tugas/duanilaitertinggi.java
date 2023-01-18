@@ -50,7 +50,7 @@ public class duanilaitertinggi {
                 tertinggi2 = score;
             }
         }
-        System.out.println( " penilaian tertinggi tertinggi: " + siswa1 + "\nsiswa nilai tertinggi ke 2 : " + siswa2);
+        System.out.println( " penilaian tertinggi: " + siswa1 + "\nsiswa nilai tertinggi ke 2 : " + siswa2);
 
     }
 }
