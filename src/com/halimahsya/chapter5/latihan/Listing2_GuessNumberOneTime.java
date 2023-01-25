@@ -2,7 +2,7 @@ package com.halimahsya.chapter5.latihan;
 
 import java.util.Scanner;
 
-public class GuessNumberOneTime {
+public class Listing2_GuessNumberOneTime {
     public static void main(String[] args){
 
         int nomer = (int)(Math.random() * 101);

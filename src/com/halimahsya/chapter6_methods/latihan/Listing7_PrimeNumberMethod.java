@@ -1,5 +1,4 @@
 package com.halimahsya.chapter6_methods.latihan;
-
 public class Listing7_PrimeNumberMethod {
     public static void main(String[] args){
         System.out.println( " pertama angka prima 50 adalah \n");
@@ -18,7 +17,7 @@ public class Listing7_PrimeNumberMethod {
                 System.out.printf("%-5s\n", nomer);
             }
             else
-                System.out.printf("%-5s", nomer);
+                System.out.printf("%-10s", nomer);
         }
         nomer++;
     }

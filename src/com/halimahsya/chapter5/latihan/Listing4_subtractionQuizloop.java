@@ -2,7 +2,7 @@ package com.halimahsya.chapter5.latihan;
 
 import java.util.Scanner;
 
-public class subtractionQuiz {
+public class Listing4_subtractionQuizloop {
     public static void main(String[] args){
         final int nomerdaripertanyaan = 5;
         int hitunganyangbenar = 0;

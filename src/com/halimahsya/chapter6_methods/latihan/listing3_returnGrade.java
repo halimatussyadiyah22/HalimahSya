@@ -2,8 +2,8 @@ package com.halimahsya.chapter6_methods.latihan;
 
 public class listing3_returnGrade {
     public static void main(String[] args){
-        System.out.println(" nilainya adalah " + nilainya(78.5));
-        System.out.println(" nilainya adalah " + nilainya(59.5));
+        System.out.println(" nilainya adalah " + nilainya(60.0));
+        System.out.println(" nilainya adalah " + nilainya(73.0));
 
     }
     public static char nilainya(double skor){

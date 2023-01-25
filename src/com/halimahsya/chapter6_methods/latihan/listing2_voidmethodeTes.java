@@ -19,5 +19,6 @@ public static void printGrade(double skor){
     }else{
         System.out.println(" F ");
     }
+
     }
 }

@@ -2,7 +2,7 @@ package com.halimahsya.chapter6_methods.latihan;
 
 import java.util.Scanner;
 
-public class Listig6_GreatestCommonDivisorMethod {
+public class Listing6_GreatestCommonDivisorMethod {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 

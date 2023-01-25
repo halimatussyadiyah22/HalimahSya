@@ -5,9 +5,8 @@ public class Listing1_tesmaks {
         int i = 5, j = 2 ;
         int k = max(i,j);
         System.out.println(" maksimal dari " + i + " dan " + j + "adalah" + k);
-
     }
-    public static int max(int nomer1,int nomer2){
+    public static int max(int nomer1 ,int nomer2){
         int result;
         if (nomer1 > nomer2)
             result = nomer1;

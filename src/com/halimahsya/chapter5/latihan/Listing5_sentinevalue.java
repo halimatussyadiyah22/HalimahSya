@@ -2,7 +2,7 @@ package com.halimahsya.chapter5.latihan;
 
 import java.util.Scanner;
 
-public class sentinevalue {
+public class Listing5_sentinevalue {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.println(" masukan sebuah bilangan bulat (masukan berakhir jika itu adalah  0) = ");

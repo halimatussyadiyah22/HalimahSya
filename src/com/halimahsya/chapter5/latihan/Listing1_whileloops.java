@@ -1,6 +1,6 @@
 package com.halimahsya.chapter5.latihan;
 import java.util.Scanner;
-public class whileloops {
+public class Listing1_whileloops {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         int nomer1 = (int)(Math.random() * 10);

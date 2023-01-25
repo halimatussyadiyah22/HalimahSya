@@ -1,6 +1,6 @@
 package com.halimahsya.chapter5.latihan;
 
-public class tespenjumlahan {
+public class Listing8_tespenjumlahan {
     public static void main(String[] args){
         float sum = 0;
 

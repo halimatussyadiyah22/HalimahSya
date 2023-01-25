@@ -1,6 +1,6 @@
 package com.halimahsya.chapter5.latihan;
 
-public class multiplicationtable {
+public class Listing7_multiplicationtable {
     public static void main(String[] args){
 
         System.out.println("            tabel perkalian ");
