@@ -105,7 +105,9 @@ public class ujian3 {
                 out = "hexadecimal";
 
                 number = inputNumber(in,out);
+
                 boolean result = checkInput(number,in);
+
                 finalResult = convertNumber(result,number,in,out);
             }
 
@@ -123,17 +125,17 @@ public class ujian3 {
         System.out.println("converter number syatem");
         System.out.println("======= MENU =======");
         System.out.println("1. Binnary to decimal ");
-        System.out.println("1. Binnary to octal ");
-        System.out.println("1. Binnary to hexadecimal ");
-        System.out.println("1. Decimal to binnary ");
-        System.out.println("1. Decimal to octal ");
-        System.out.println("1. Decimal to hexadecimal ");
-        System.out.println("1. hexadecimal to binnary ");
-        System.out.println("1. hexadecimal to octal ");
-        System.out.println("1. hexadecimal to decimal ");
-        System.out.println("1. octal to binnary ");
-        System.out.println("1. octal to decimal ");
-        System.out.println("1. octal to hexadecimal ");
+        System.out.println("2. Binnary to octal ");
+        System.out.println("3. Binnary to hexadecimal ");
+        System.out.println("4. Decimal to binnary ");
+        System.out.println("5. Decimal to octal ");
+        System.out.println("6. Decimal to hexadecimal ");
+        System.out.println("7. hexadecimal to binnary ");
+        System.out.println("8. hexadecimal to octal ");
+        System.out.println("9. hexadecimal to decimal ");
+        System.out.println("10. octal to binnary ");
+        System.out.println("11. octal to decimal ");
+        System.out.println("12. octal to hexadecimal ");
 
         System.out.print("chose number of menu : ");
         return input.nextInt();
