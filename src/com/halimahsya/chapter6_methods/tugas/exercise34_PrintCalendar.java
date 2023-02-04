@@ -1,4 +1,109 @@
 package com.halimahsya.chapter6_methods.tugas;
 
+import java.util.Scanner;
+
 public class exercise34_PrintCalendar {
+    public static void main(String[] args){
+        Scanner keyboard = new Scanner(System.in);
+        System.out.print(" enter full year (e.g., 2012) : ");
+        int year = keyboard.nextInt();
+        while(!isValidYear(year)){
+            System.out.println("invalid year!");
+            System.out.print(" enter full year(e.g., 2012): ");
+            year = keyboard.nextInt();
+        }
+        System.out.print(" enter month as number between 1 and 12 : ");
+        int month = keyboard.nextInt();
+        while (!isValidMont(month)){
+            System.out.println("invalid month !");
+            System.out.print(" enter month as number between 1 and 12 : ");
+            month = keyboard.nextInt();
+        }
+        PrintCalendarHeader(month,year);
+        PrintFirstDay(month,year);
+        PrintCalendarItself(month,year);
+    }
+    public static boolean isValidYear(int year){
+        return year > 0;
+    }
+    public static boolean isValidMont(int month){
+        return month > 0 && month <= 12;
+    }
+    public static void PrintCalendarHeader(int month,int year){
+        String[] months = {"January", "February", "March", "April", "May", "June", "July", "August", "Septemter", "October", "November", "December"};
+
+        System.out.print("\t\t"+months[month-1]+"\t");
+        System.out.println(year);
+        System.out.println("---------------------------");
+
+        System.out.println("Sun\tMon\tTue\tWed\tThu\tFri\tSat");
+    }
+
+    public static void  PrintFirstDay(int month, int year) {
+        int firstDay = dayOfWeek(1, month, year);
+
+        String leadingTabs = "1";
+
+
+        for(int i = 1; i<firstDay; i++){
+            leadingTabs = "\t" + leadingTabs;
+        }
+        if(firstDay == 0){
+            leadingTabs = "\t\t\t\t\t\t1";
+        }
+
+        System.out.print(leadingTabs + "\t");
+    }
+
+    public static void  PrintCalendarItself(int month, int year) {
+
+
+        int lastDayOfMonth = lastDayOfMonth(month, year);
+
+
+        for (int i = 2; i <= lastDayOfMonth; i++) {
+            int printedDay = dayOfWeek(i, month, year);
+            if (printedDay == 1) {
+                System.out.println();
+            }
+            System.out.print(i + "\t");
+        }
+    }
+
+
+    public static int dayOfWeek(int dayOfMonth, int month, int year) {
+        if (month == 1 || month == 2) {
+            month = month + 12;
+            year--;
+        }
+        int q, m, j, k;
+        q = dayOfMonth;
+        m = month;
+        j = year/100;
+        k = year%100;
+        int dayOfTheWeek = (q + (26*(m+1) /10) + k + k/4 + j/4 + (5*j)) % 7;
+        return dayOfTheWeek;
+    }
+
+    public static boolean isLeapYear(int year) {
+        return year % 400 == 0 || (year % 4 == 0 && year % 100 != 0);
+    }
+
+    public static int lastDayOfMonth(int month, int year) {
+        int lastDayOfMonth;
+        if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
+            lastDayOfMonth = 31;
+        } else if (month == 2) {
+            if (isLeapYear(year)) {
+                lastDayOfMonth = 29;
+            } else {
+                lastDayOfMonth = 28;
+            }
+        } else {
+            lastDayOfMonth = 30;
+        }
+        return lastDayOfMonth;
+    }
+
+
 }

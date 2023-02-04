@@ -1,19 +1,17 @@
 package com.halimahsya.chapter6_methods.ujian;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Scanner;
-public class ujian4 {
-    static SimpleDateFormat montFormat = new SimpleDateFormat("MMMM");
-    static SimpleDateFormat yearFormat = new SimpleDateFormat("yyyy");
-    static Date date = new Date();
-    static String bulan = montFormat.format(date);
-    static String tahun = yearFormat.format(date);
-
+public class i {
+    /*
     public static void main(String[] args) {
-        System.out.println("apalikasi penggajihan karyawan");
 
         Scanner input = new Scanner(System.in);
+
+        System.out.println("penggajihan karyawan");
+        System.out.println("===========================================");
+        System.out.println(" bulan : ");
+        String bulan = input.nextLine();
+        System.out.println("tahun : ");
+        int tahun = input.nextInt();
         System.out.print("Nama :");
         String nama = input.nextLine();
         System.out.print("status : ");
@@ -29,14 +27,8 @@ public class ujian4 {
         System.out.print("gaji pokok : ");
         double gaji = input.nextDouble();
 
-        double tkeluarga = tunjanganKeluarga(gaji, status, anak);
-        double tTransport = tunjanganTransportasi(msk, jarak);
-        double tkesehatan = tunjanganKesehatan(thn);
-
-        double totalGajih = gaji + tkeluarga + tTransport + tkesehatan;
-
         System.out.println("--------------------------------------------------------------------------------------------");
-        System.out.println(" Slip Gaji Karyawan Bulan Februari 2023 ");
+        System.out.println(" Slip Gaji Karyawan Bulan" + bulan + tahun );
         System.out.println("--------------------------------------------------------------------------------------------");
         System.out.println(" ");
         System.out.println("Nama karyawan             : " + nama);
@@ -46,20 +38,24 @@ public class ujian4 {
         System.out.println("Jumlah msk kerja          : " + msk + " hari ");
         System.out.println("Tahun masuk               : " + thn);
         System.out.println("--------------------------------------------------------------------------------------------");
-        System.out.println("\t|\tGajih pokok\t|\tT.Keluarga\t|\tT.transportasi\t|\tT.Kesehatan\t|\t");
+        System.out.println(" gaji pokok       |        T.keluarga       |       T.transportasi       |       T. kesehatan");
+
         System.out.println("--------------------------------------------------------------------------------------------");
-        System.out.printf("\t|t%,d\t|\t%,d\t\t|\t%,d\t\t|\t%,d\t\t|\n", gaji, tkeluarga, tTransport, tkesehatan);
+        System.out.printf("%4.2f     ", gaji);
+        System.out.print("   |      ");
+        System.out.printf("%6.2f", tkeluarga(status,anak,gaji););
+        System.out.print("   |      ");
+        System.out.printf("%-11.2f", j);
+        System.out.print("   |      ");
+        System.out.printf("%7.2f\n", ks );
         System.out.println("--------------------------------------------------------------------------------------------");
         System.out.println(" ");
-        System.out.print("Total gaji bulan" + bulan + ":     " + totalGajih);
-        System.out.println("\n------------------------------------------------------------------------------------------");
+        t(gaji,n,j,ks);
 
-
+        total(status, anak, jarak, msk, thn, gaji);
     }
-
-    public static int tunjanganKeluarga(double gaji,String status, double anak) {
+    public static void tkeluarga(String status,double anak, double gaji) {
         double n = 0;
-        status = status.toLowerCase();
         if (status == "menikah" || anak == 0)
             n = 0.05 * gaji;
         else if (status == "menikah" || anak <= 3)
@@ -75,45 +71,50 @@ public class ujian4 {
         else if (status == "janda" || anak == 0)
             n = 0.05 * gaji;
         else
-            System.out.println("salah");
-
-        return (int) n;
+            n = 0;
+        return n;
     }
+    public static int ttransportasi(int jarak,)
+    double j = 0;
+    if (jarak < 5)
+    j = 5000 * msk;
+    else if (jarak <= 10)
+    j = 10000* msk;
+    else if (jarak > 10 )
+    j = 15000 * msk;
+    else
+    j = 0;
 
-    public static int tunjanganTransportasi(int jarak, double msk) {
-        double j = 0;
-        if (jarak < 5)
-            j = 5000 * msk;
-        else if (jarak <= 10)
-            j = 10000 * msk;
-        else if (jarak > 10)
-            j = 15000 * msk;
-        else
-            System.out.println("salah");
-        return (int) j;
-    }
-
-    public static int tunjanganKesehatan(int thn) {
-        int tahunIni = Integer.parseInt(tahun);
-
-        int th = tahunIni - thn;
-        int ks = 0;
-        if (th <= 2)
-            ks = 200_000;
-        else if (th <= 5) {
-            ks = 500_000;
-        } else if (th > 5) {
-            ks = 750_000;
-        } else
+    double th = 2023-thn;
+    double ks = 0;
+    if ( th <= 2 )
+    ks = 200000;
+    else if (th <= 5 ) {
+        ks = 500000;
+    } else if (th > 5 ) {
+        ks = 750000;
+    }else
             System.out.println("salah!");
-        return ks;
+
+
+
+
+
+
+
+
+}
+    public static void t(double gaji,double n,double j, double ks){
+        double total = gaji+n+j+ks;
+
+        System.out.print("Total gaji bulan februari     : ");
+        System.out.printf("%6.2f",total);
+        System.out.println("\n------------------------------------------------------------------------------------------");
     }
+
 }
 
+     */
 
 
-
-
-
-
-
+}
