@@ -13,8 +13,7 @@ public class highscore {
 
         System.out.println(" masukan nama siswa lain dan nilainya : ");
         for(int i = 0; i< nomersiswa; i++){
-            System.out.print(" siswa : " + (i + 1) + "\n  nama : ");
-
+            System.out.println(" siswa : " + (i + 1) + "\nnama : ");
             String nama = input.nextLine();
 
             System.out.print(" nilai : " );
