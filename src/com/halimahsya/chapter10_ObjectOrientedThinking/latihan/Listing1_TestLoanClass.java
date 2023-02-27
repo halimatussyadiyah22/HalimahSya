@@ -12,7 +12,7 @@ public class Listing1_TestLoanClass {
         System.out.println(" masukan jumlah pinjaman, untuk contoh, 120000.95: ");
         double loanAmount = input.nextDouble();
 
-        Loan loan = new Loan(annualInterestRate, numberOfYears, loanAmount);
+         Listing2_Loan loan = new Listing2_Loan(annualInterestRate, numberOfYears, loanAmount);
 
         System.out.printf(" pinjaman dibuat dalam %s\n " + " bayaran perbulan adalah %.2f\nTotal pembayaran adalah %.2f\n",
                 loan.getLoanDate().toString(), loan.getMonthlyPayment(), loan.getTotalPayment());
