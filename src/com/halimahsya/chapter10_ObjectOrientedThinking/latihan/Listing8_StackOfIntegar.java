@@ -13,7 +13,24 @@ public class Listing8_StackOfIntegar {
     }
     public void push(int value){
             if (size >= elements.length){
-                int[] temp = new int[elements.length]
+                int[] temp = new int[elements.length* 2];
+                System.arraycopy(elements,0,temp,0,elements.length);
             }
+            elements[size++] = value;
+    }
+    public  int pop(){
+            return elements[--size];
+    }
+    public int peek(){
+            return elements[size - 1];
+    }
+    public boolean empty(){
+            return  size == 0;
+    }
+    public int getSize(){
+            return  size;
+    }
+
+    public static class Listing9_LargeFactorial {
     }
 }

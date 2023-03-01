@@ -4,7 +4,6 @@ import com.halimahsya.chapter2.tugas.Circle;
 
 public class Listing6_CircleWithStaticMembers {
     double radius;
-
     static int numberOfObjects = 0;
 
     Listing6_CircleWithStaticMembers(){
