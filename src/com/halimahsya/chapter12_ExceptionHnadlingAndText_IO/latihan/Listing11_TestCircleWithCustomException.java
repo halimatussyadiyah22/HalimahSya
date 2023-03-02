@@ -5,22 +5,23 @@ import com.halimahsya.chapter2.tugas.Circle;
 public class Listing11_TestCircleWithCustomException {
     public static void main(String[] args) {
         try {
-            new Listing7_CircleWithException(5);
-            new Listing7_CircleWithException(-5);
-            new Listing7_CircleWithException(0);
+            new  CircleWithCustomException(5);
+            new  CircleWithCustomException(-5);
+            new CircleWithCustomException(0);
 
         }
         catch (Listing10_InvalidRadiusException ex){
             System.out.println(ex);
         }
-        System.out.println(" jumlah dari objek yang dibuat : " + Listing7_CircleWithException.getNumberOfObject());
+        System.out.println(" jumlah dari objek yang dibuat : " +
+                 CircleWithCustomException.getNumberOfObjek());
     }
 }
 class CircleWithCustomException{
     private double radius;
     private static int numberOfObjek = 0;
 
-    public CircleWithCustomException() throws Listing10_InvalidRadiusException{
+    public  CircleWithCustomException() throws Listing10_InvalidRadiusException{
         this(1.0);
     }
     public CircleWithCustomException(double newRadius )
