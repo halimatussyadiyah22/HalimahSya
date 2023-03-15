@@ -15,7 +15,7 @@ public class Listing6_TestException {
             System.out.println("\n melacak info yang diperoleh dari getStackTrace");
             StackTraceElement[] traceElements = ex.getStackTrace();
             for (int i = 0; i < traceElements.length; i++){
-                System.out.print(" method " + traceElements[i].getMethodName() + ": ");
+                System.out.print(" method " + traceElements[i].getMethodName());
                 System.out.print("( " + traceElements[i].getClassName() + " ) ");
                 System.out.println(traceElements[i].getLineNumber() + " ) ");
             }
