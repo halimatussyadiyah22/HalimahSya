@@ -35,7 +35,7 @@ public abstract class GeometricObject {
     @Override
     public String toString() {
         return  "created on " + dateCreated + "\ncolor: " + color +
-                "and filles: " + filled;
+                "and files: " + filled;
     }
     public abstract  double getArea();
     public abstract double getPerimeter();
